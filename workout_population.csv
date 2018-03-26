@@ -1,0 +1,31 @@
+﻿Workout Plan Number,Exercise,Sets,Reps,Encoded Value
+1,bench press,3,13,1.0313
+1,single-leg press,3,25,1.0325
+1,ez-bar tricep extensions,4,15,1.0415
+2,burpee,2,25,0.0225
+2,box jumps,3,15,0.0315
+2,jumping jacks,4,25,0.0425
+3,incline hammer curls,4,12,1.0412
+3,deadlift,3,15,1.0315
+3,front squat,4,12,1.0412
+4,mountain climber,3,25,0.0325
+4,jumping rope,5,25,0.0525
+4,tricep pushdowns,3,25,1.0325
+5,hammer curls,4,12,1.0412
+5,side laterals to front raise,3,12,1.0312
+5,butt kicks,2,25,0.0225
+6,pull-ups,3,12,1.0312
+6,decline bench press,4,15,1.0415
+6,pushups,3,15,1.0315
+7,laying leg curls,4,12,1.0412
+7,high knee jog,2,25,0.0225
+7,defensive slide,2,25,0.0225
+8,boxing punches,4,25,0.0425
+8,standing dumbell up-right row,3,12,1.0312
+8,v-bar pulldown,4,15,1.0412
+9,lateral speed step,3,25,0.0325
+9,prowler sprint,4,5,0.0405
+9,preacher curl,4,15,1.0415
+10,dumbell lunges,3,12,1.0312
+10,seated dumbell press,3,15,1.0315
+10,one-arm dumbell row,3,15,1.0315
