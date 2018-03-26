@@ -64,6 +64,13 @@ if __name__ == '__main__':
             print("Parent: ")
             print(parent)
 
+        # perform crossover based on 50% probability
+        crossover_prob = random.choice([True, False])
+        crossover = Crossover(parents, crossover_probability=crossover_prob)
+        offspring = crossover.perform_crossover()
+        print("Offspring: ")
+        print(offspring)
+
         # increase current generation count
         current_generation_count += 1
 
