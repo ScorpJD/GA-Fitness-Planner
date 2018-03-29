@@ -68,8 +68,15 @@ if __name__ == '__main__':
         crossover_prob = random.choice([True, False])
         crossover = Crossover(parents, crossover_probability=crossover_prob)
         offspring = crossover.perform_crossover()
-        print("Offspring: ")
+        print("Crossed over offspring: ")
         print(offspring)
+
+        # perform mutation based on 50% probability
+        mutation_prob = random.choice([True, False])
+        mutation = Mutation(offspring, mutation_probability=mutation_prob)
+        final_offspring = mutation.mutate()
+        print("Mutated Offspring: ")
+        print(final_offspring)
 
         # increase current generation count
         current_generation_count += 1
