@@ -18,3 +18,13 @@ class Selection:
             self.parents[0] = self.population[last_index]
             self.parents[1] = self.population[second_last_index]
         return self.parents
+
+    # Roulette wheel selection
+    # def select(self):
+    #     # Sum up the fitness scores of all chromosomes in population
+    #     total_pop_score = 0.0
+    #     for index, (chromosome, fitness_score) in enumerate(self.population):
+    #         total_pop_score += fitness_score
+    #     print("Population total score: " + str(total_pop_score))
+    #     rand_num = range(0, total_pop_score)
+    #     return self.parents

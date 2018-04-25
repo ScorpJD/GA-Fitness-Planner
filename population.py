@@ -51,4 +51,5 @@ class Population:
 
     def init_next_gen_population(self, next_gen_population):
         self.population = next_gen_population
+        return self.population
 

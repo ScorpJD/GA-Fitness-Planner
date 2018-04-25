@@ -11,9 +11,9 @@ class Mutation:
     def mutate(self):
         final_offspring = []
         if self.mutation_probability:
-            print("Mutating offspring...")
+            #print("Mutating offspring...")
             rand_mutation_val = random.randrange(-1, 1)
-            print("Random mutation val: " + str(rand_mutation_val))
+            #print("Random mutation val: " + str(rand_mutation_val))
             for gene in self.offspring:
                 encoded_val = gene[1]
                 # split encoded value into two parts [ 0 or 1 , sets and reps ]
@@ -33,6 +33,12 @@ class Mutation:
                 else:
                     # mutate the number of reps
                     num_reps += rand_mutation_val
+
+                if num_sets < 0:
+                    num_sets = random.randrange(1, 4)
+
+                if num_reps < 0:
+                    num_reps = random.randrange(1, 20)
 
                 # join encoded value parts back together
                 num_sets_rep_str = "0" + str(num_sets) + str(num_reps)
