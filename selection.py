@@ -1,6 +1,9 @@
+import random
+
 class Selection:
     population = []
     parents = []
+    parent = []
 
     def __init__(self, population):
         self.population = population
@@ -25,6 +28,25 @@ class Selection:
     #     total_pop_score = 0.0
     #     for index, (chromosome, fitness_score) in enumerate(self.population):
     #         total_pop_score += fitness_score
-    #     print("Population total score: " + str(total_pop_score))
-    #     rand_num = range(0, total_pop_score)
-    #     return self.parents
+    #
+    #     # Generate a random number between 0 - total_population_score
+    #     if total_pop_score <= 0 or total_pop_score < 5.0:
+    #         total_pop_score += 2.0
+    #     rand_num = random.randrange(0, int(total_pop_score))
+    #
+    #     # Compute running sum of fitness scores in population and check against rand_num
+    #     sum_so_far = 0.0
+    #     for index, (chromosome, fitness_score) in enumerate(self.population):
+    #         if sum_so_far > rand_num:
+    #             # select this chromosome to be the parent
+    #             self.parent.append(self.population[index])
+    #             break
+    #         else:
+    #             # add this chromosome's fitness score to the running sum
+    #             sum_so_far += fitness_score
+    #
+    #     if len(self.parent) != 1:
+    #         random_selection_index = random.randrange(0, len(self.population) - 1)
+    #         self.parent.append(self.population[random_selection_index])
+    #
+    #     return self.parent

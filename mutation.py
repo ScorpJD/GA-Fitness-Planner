@@ -23,7 +23,7 @@ class Mutation:
                 # get sets number
                 num_sets = int(set_rep_num_val[:2])
                 # get reps number
-                num_reps = int(set_rep_num_val[2:])
+                num_reps = int(set_rep_num_val[2:4])
 
                 # randomly mutate number of sets or number of reps
                 mutate_sets = random.choice([True, False])
